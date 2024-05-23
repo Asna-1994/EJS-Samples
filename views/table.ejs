@@ -1,0 +1,37 @@
+
+<%-include('header')-%>
+<section class="p-5" style="height: 100vh; ">
+    <div class="container" >
+        <h1 class="text-center p-5">Table Sample eEjs</h1>
+        <table class="table table-hover">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                 
+                  </tr>
+                </thead>
+                <tbody>
+                    <%tableItems.forEach((item) => {%>
+                  <tr>
+                  
+                    <td><%=item.slNo%></td>
+                    <td><%=item.name%></td>
+                    <td>₹<%=item.price%></td>
+                  </tr>
+                  <%});%>
+                 
+             
+                </tbody>
+              </table>
+            </table>
+    
+    </div>
+    
+</section>
+
+
+
+<%-include('footer')-%>

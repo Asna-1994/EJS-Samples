@@ -1,0 +1,28 @@
+
+<%-include('header')-%>
+<div class="container">
+    <h1 class="text-center p-5">Cards for sample Ejs</h1>
+    <div class="row ">
+        <%cards.forEach((item) => {%>
+         
+                <div class="col-12 col-md-2 col-lg-3 ">
+
+                    <div class="card mt-4" style="width: 18rem;">
+                        <img src="https://www.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">  <%=item.title%>   </h5>
+                          <p class="card-text"><%=item.description%></p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    
+                </div>
+            
+     
+        <%});%>
+    </div>
+</div>
+
+    
+
+<%-include('footer')-%>
